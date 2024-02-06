@@ -1,0 +1,18 @@
+@mixin base-btn($w: 200px, $h: 40px) {
+    width: $w;
+    height: $h;
+    background-color: $accent-bg;
+    border: solid $accent-bg 1px;
+    border-radius: 2px;
+    color: $base-font;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    &:hover {
+        color: $accent-font;
+        border-color: $light-bg;
+        background-color: $light-bg;
+    }
+    @content;
+}

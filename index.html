@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="scss/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <title>JS Array | Darren Cattee</title>
+   </head>
+   <body>
+      <div class="global-container">
+         <div class="title-container">
+            <h1 class="main-title">Assigning Images to Emails</h1>
+            <h3>Find a random image using the <a href="#fetcher-btn"><button class="fetch-button-ref">Find Image</button></a> button.</h3>
+            <h3>Enter your email address into the input field and use the <a href="#email-btn"><button class="fetch-button-ref">Add Email</button></a> button.</h3>
+            <h3>Assign the image to your email address by pressing <a href="#select-btn"><button class="fetch-button-ref">Add Image</button></a> button.</h3>
+         </div>
+         <div class="main-container">
+            <div class="fetcher-box">
+               <h2>Image Fetch</h2>
+               <div class="image-container"></div>
+               <button id="fetcher-btn" class="fetch-button">Find Image</button>
+            </div>
+         </div>
+         <div class="main-container">
+            <div class="fetcher-box">
+               <h2>Enter Email Address</h2>
+               <input id="email-input" class="email-textbox" placeholder="Email Address">
+               <button id="email-btn" class="fetch-button">Add Email</button>
+            </div>
+         </div>
+         <div class="main-container">
+            <div class="fetcher-box">
+               <h2>Select Email Address</h2>
+               <select id="select-email" class="select-email">
+                  <option>Select an Email Address</option>
+               </select>
+               <button id="select-btn" class="fetch-button">Add Image</button>
+            </div>
+         </div>
+         <div class="main-container">
+            <div class="fetcher-box">
+               <h2>Assigned Images</h2>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery-3.7.1.js"></script>
+      <script src="js/myjs.js"></script>
+   </body>
+ </html>

@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    background-color: $base-bg;
+    color: $base-font;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 32px auto;
+}
+
+a {
+    color: $base-font;
+    text-decoration: none;
+    &:hover {
+        color: $accent-font;
+    }
+}
