@@ -1,3 +1,4 @@
+
 .main-title {
     font-size: 3rem;
     line-height: 4rem;
@@ -88,7 +89,7 @@
 
 .fetch-button {
     @include base-btn();
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 20px;
 }
 
@@ -131,7 +132,7 @@
     flex-direction: row;
 }
 
-// ********* GLOW WHEN PRESS TITLE BUTTONS ********* //
+// ********* FOCUS & ERROR GLOWS ********* //
 
 .focus-glow {
     box-shadow: 0 0 20px $accent-font;
@@ -139,4 +140,19 @@
 
 .img-fetcher-box, .email-input-box, .email-select-box {
     transition: box-shadow 1s ease;
+}
+
+.email-error-glow {
+    border: solid #ff0000 1px;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.error-msg-input, .error-msg-select {
+    position: absolute;
+    content: "";
+    font-size: 0.9rem;
+    text-align: center;
+    color: #ff5858;
+    font-weight: bold;
+    width: 299px;
 }
