@@ -17,8 +17,7 @@ body {
 .global-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto 32px auto;
+  margin-bottom: 32px;
 }
 
 a {
@@ -38,7 +37,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
   text-align: center;
 }
 .title-container > h3 {
@@ -46,8 +44,22 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.title-text {
+  width: 300px;
+}
+@media screen and (min-width: 768px) {
+  .title-text {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .title-text {
+    width: 700px;
+  }
+}
+
 .fetch-button-ref {
-  width: 120px;
+  width: 125px;
   height: 30px;
   background-color: #555;
   border: solid #555 1px;
@@ -64,24 +76,62 @@ a:hover {
   background-color: #666;
 }
 
-.main-container {
+.primary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mb-section-main {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .mb-section-main {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mb-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+}
+
+.fetcher-container, .email-input-container, .select-email-container {
   width: 300px;
 }
 
-.fetcher-box {
+@media screen and (min-width: 768px) {
+  .fetcher-container {
+    margin-right: 15px;
+  }
+}
+
+.base-box {
   margin-top: 30px;
-  width: 100%;
   text-align: center;
   border: solid #222 1px;
   border-radius: 4px;
   background-color: #222;
 }
 
+.box-sizer, .assigned-sizer {
+  width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .assigned-sizer {
+    width: 632px;
+  }
+}
+
 .image-container {
-  height: 250px;
-  width: 250px;
+  height: 252px;
+  width: 252px;
   border: solid #555 1px;
-  border-radius: 2px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -132,4 +182,23 @@ a:hover {
   outline: none;
   border: solid #ddd 1px;
   box-shadow: 0 0 5px #ddd;
+}
+
+@media screen and (min-width: 768px) {
+  .assign-image-container {
+    width: 700px;
+  }
+}
+
+.assigned-image-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.focus-glow {
+  box-shadow: 0 0 20px #fff;
+}
+
+.img-fetcher-box, .email-input-box, .email-select-box {
+  transition: box-shadow 1s ease;
 }/*# sourceMappingURL=style.css.map */

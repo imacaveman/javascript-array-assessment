@@ -12,37 +12,46 @@
    <body>
       <div class="global-container">
          <div class="title-container">
-            <h1 class="main-title">Assigning Images to Emails</h1>
-            <h3>Find a random image using the <a href="#fetcher-btn"><button class="fetch-button-ref">Find Image</button></a> button.</h3>
-            <h3>Enter your email address into the input field and use the <a href="#email-btn"><button class="fetch-button-ref">Add Email</button></a> button.</h3>
-            <h3>Assign the image to your email address by pressing <a href="#select-btn"><button class="fetch-button-ref">Add Image</button></a> button.</h3>
-         </div>
-         <div class="main-container">
-            <div class="fetcher-box">
-               <h2>Image Fetch</h2>
-               <div class="image-container"></div>
-               <button id="fetcher-btn" class="fetch-button">Find Image</button>
+            <div class="title-text">
+               <h1 class="main-title">Assigning Images to Emails</h1>
+               <h3>Find a random image using the <a href="#fetcher-btn"><button class="fetch-button-ref find-img-ref">Find Image</button></a> button.</h3>
+               <h3>Enter your email address into the input field and use the <a href="#email-btn"><button class="fetch-button-ref add-email-ref">Add Email</button></a> button.</h3>
+               <h3>Assign the image to your email address by using the <a href="#select-btn"><button class="fetch-button-ref assign-img-ref">Assign Image</button></a> button.</h3>
             </div>
          </div>
-         <div class="main-container">
-            <div class="fetcher-box">
-               <h2>Enter Email Address</h2>
-               <input id="email-input" class="email-textbox" placeholder="Email Address">
-               <button id="email-btn" class="fetch-button">Add Email</button>
+         <div class="primary-container">
+            <div class="mb-section-main">
+               <div class="fetcher-container">
+                  <div class="img-fetcher-box base-box box-sizer">
+                     <h2>Image Fetch</h2>
+                     <div class="image-container">
+                        <img src="https://picsum.photos/250" alt="Current randomized image">
+                     </div>
+                     <button id="fetcher-btn" class="fetch-button find-img-btn">Find Image</button>
+                  </div>
+               </div>
+               <div class="mb-section">
+                  <div class="email-input-container">
+                     <div class="email-input-box base-box box-sizer">
+                        <h2>Enter Email Address</h2>
+                        <input type="email" id="email-input" class="email-textbox" placeholder="Email Address">
+                        <button id="email-btn" class="fetch-button">Add Email</button>
+                     </div>
+                  </div>
+                  <div class="select-email-container">
+                     <div class="email-select-box base-box box-sizer">
+                        <h2>Select Email Address</h2>
+                        <select id="select-email" class="select-email">
+                           <option>Select an Email Address</option>
+                        </select>
+                        <button id="select-btn" class="fetch-button">Assign Image</button>
+                     </div>
+                  </div>
+               </div>
             </div>
-         </div>
-         <div class="main-container">
-            <div class="fetcher-box">
-               <h2>Select Email Address</h2>
-               <select id="select-email" class="select-email">
-                  <option>Select an Email Address</option>
-               </select>
-               <button id="select-btn" class="fetch-button">Add Image</button>
-            </div>
-         </div>
-         <div class="main-container">
-            <div class="fetcher-box">
+            <div class="base-box assigned-sizer">
                <h2>Assigned Images</h2>
+               <div class="assigned-image-box"></div>
             </div>
          </div>
       </div>
