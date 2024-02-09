@@ -127,9 +127,18 @@
     }
 }
 
-.assigned-image-box {
+.img-storage {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: $mb-med) {
+        flex-direction: row;
+    }
+}
+
+li {
+    margin: 10px 14px;
 }
 
 // ********* FOCUS & ERROR GLOWS ********* //

@@ -28,6 +28,11 @@ a:hover {
   color: #fff;
 }
 
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
 .main-title {
   font-size: 3rem;
   line-height: 4rem;
@@ -190,9 +195,20 @@ a:hover {
   }
 }
 
-.assigned-image-box {
+.img-storage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .img-storage {
+    flex-direction: row;
+  }
+}
+
+li {
+  margin: 10px 14px;
 }
 
 .focus-glow {
