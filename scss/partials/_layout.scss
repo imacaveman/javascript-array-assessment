@@ -26,7 +26,7 @@
 }
 
 .fetch-button-ref {
-    @include base-btn(125px, 30px);
+    @include base-btn(140px, 30px);
 }
 
 .primary-container {
@@ -67,6 +67,11 @@
     border: solid $dark-bg 1px;
     border-radius: 4px;
     background-color: $dark-bg;
+}
+
+.lightbox {
+    background-color: $lightest-bg;
+    border-color: $lightest-bg;
 }
 
 .box-sizer, .assigned-sizer {
@@ -121,13 +126,23 @@
     }
 }
 
-.assign-image-container {
-    @media screen and (min-width: $mb-med) {
-        width: 700px;
+.light-inputs {
+    border-color: $lighter-bg;
+    &:focus {
+        border-color: $accent-bg;
+        box-shadow: 0 0 5px $accent-bg;
     }
 }
 
-.img-storage {
+.assigned-image-box {
+    
+    @media screen and (min-width: $mb-med) {
+        width: 630px;
+        flex-direction: row;
+    }
+}
+
+.assigned-image-box > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,6 +162,10 @@ li {
     box-shadow: 0 0 20px $accent-font;
 }
 
+.focus-glow-light {
+    box-shadow: 0 0 20px $dark-bg;
+}
+
 .img-fetcher-box, .email-input-box, .email-select-box {
     transition: box-shadow 1s ease;
 }
@@ -164,4 +183,39 @@ li {
     color: #ff5858;
     font-weight: bold;
     width: 299px;
+}
+
+.light-error {
+    border-color: #ff5858;
+    box-shadow: 0 0 10px #ff5858;
+}
+
+// ********* LIGHT/DARK MODE BUTTON & FUNCTIONALITY ********* //
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle-btn {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: $accent-font;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: solid $accent-font 1px;
+    margin: 50px 10px 0 0;
+    height: 30px;
+    width: 30px;
+}
+
+.btnon {
+    color: $accent-font;
+    background-color: $base-bg;
+    border-color: $base-bg;
 }

@@ -7,6 +7,13 @@ body {
   margin: 0;
   background-color: #333;
   color: #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.lightmode {
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
 }
 
 * {
@@ -64,7 +71,7 @@ ul {
 }
 
 .fetch-button-ref {
-  width: 125px;
+  width: 140px;
   height: 30px;
   background-color: #555;
   border: solid #555 1px;
@@ -121,6 +128,11 @@ ul {
   border: solid #222 1px;
   border-radius: 4px;
   background-color: #222;
+}
+
+.lightbox {
+  background-color: #bbb;
+  border-color: #bbb;
 }
 
 .box-sizer, .assigned-sizer {
@@ -189,20 +201,29 @@ ul {
   box-shadow: 0 0 5px #ddd;
 }
 
+.light-inputs {
+  border-color: #777;
+}
+.light-inputs:focus {
+  border-color: #555;
+  box-shadow: 0 0 5px #555;
+}
+
 @media screen and (min-width: 768px) {
-  .assign-image-container {
-    width: 700px;
+  .assigned-image-box {
+    width: 630px;
+    flex-direction: row;
   }
 }
 
-.img-storage {
+.assigned-image-box > ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-  .img-storage {
+  .assigned-image-box > ul {
     flex-direction: row;
   }
 }
@@ -213,6 +234,10 @@ li {
 
 .focus-glow {
   box-shadow: 0 0 20px #fff;
+}
+
+.focus-glow-light {
+  box-shadow: 0 0 20px #222;
 }
 
 .img-fetcher-box, .email-input-box, .email-select-box {
@@ -232,4 +257,37 @@ li {
   color: #ff5858;
   font-weight: bold;
   width: 299px;
+}
+
+.light-error {
+  border-color: #ff5858;
+  box-shadow: 0 0 10px #ff5858;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toggle-btn {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 50%;
+  border: solid #fff 1px;
+  margin: 50px 10px 0 0;
+  height: 30px;
+  width: 30px;
+}
+
+.btnon {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
 }/*# sourceMappingURL=style.css.map */

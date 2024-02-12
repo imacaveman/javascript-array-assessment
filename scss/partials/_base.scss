@@ -7,6 +7,13 @@ body {
     margin: 0;
     background-color: $base-bg;
     color: $base-font;
+    transition: background-color 0.2s ease;
+}
+
+.lightmode {
+    color: $base-bg;
+    background-color: $accent-font;
+    transition: background-color 0.2s ease;
 }
 
 * {

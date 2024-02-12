@@ -6,24 +6,27 @@
       <link rel="stylesheet" href="scss/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/42d3889deb.js" crossorigin="anonymous"></script>
       <title>JS Array | Darren Cattee</title>
    </head>
    <body>
+      <div class="container">
+         <button class="toggle-btn"><i class="fa-solid fa-lightbulb fa-lg"></i></button>
+      </div>
       <div class="global-container">
          <div class="title-container">
             <div class="title-text">
                <h1 class="main-title">Assigning Images to Emails</h1>
-               <h3>Find a random image using the <a href="#fetcher-btn"><button class="fetch-button-ref find-img-ref">Find Image</button></a> button.</h3>
-               <h3>Enter your email address into the input field and use the <a href="#email-btn"><button class="fetch-button-ref add-email-ref">Add Email</button></a> button.</h3>
-               <h3>Assign the image to your email address by using the <a href="#select-btn"><button class="fetch-button-ref assign-img-ref">Assign Image</button></a> button.</h3>
+               <h3>Find a random image using the <a href="#imagefetcher"><button class="fetch-button-ref find-img-ref">Find Image</button></a> button.</h3>
+               <h3>Enter your email address into the input field and use the <a href="#enteremail"><button class="fetch-button-ref add-email-ref">Add Email</button></a> button.</h3>
+               <h3>Assign more images to your email address by using the <a href="#emailselect"><button class="fetch-button-ref assign-img-ref">Assign Image</button></a> button.</h3>
             </div>
          </div>
          <div class="primary-container">
             <div class="mb-section-main">
                <div class="fetcher-container">
                   <div class="img-fetcher-box base-box box-sizer">
-                     <h2>Image Fetch</h2>
+                     <h2 class="imagefetcher">Image Fetch</h2>
                      <div class="image-container">
                         <img id="fetchedimg" src="" alt="Current randomized image">
                      </div>
@@ -33,7 +36,7 @@
                <div class="mb-section">
                   <div class="email-input-container">
                      <div class="email-input-box base-box box-sizer">
-                        <h2>Enter Email Address</h2>
+                        <h2 class="enteremail">Enter Email Address</h2>
                         <input type="email" id="email-input" class="email-textbox input-error-glow" placeholder="Email Address">
                         <div class="error-msg-input"></div>
                         <button id="email-btn" class="fetch-button">Add Email</button>
@@ -41,7 +44,7 @@
                   </div>
                   <div class="select-email-container">
                      <div class="email-select-box base-box box-sizer">
-                        <h2>Select Email Address</h2>
+                        <h2 class="selectemail">Select Email Address</h2>
                         <select id="select-email" class="select-email select-error-glow">
                            <option>Select an Email Address</option>
                         </select>
@@ -54,7 +57,7 @@
             <div class="base-box assigned-sizer">
                <h2>Assigned Images</h2>
                <div class="assigned-image-box">
-                  <ul class="img-storage"></ul>
+                  
                </div>
             </div>
          </div>
