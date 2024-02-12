@@ -125,12 +125,12 @@ $("#select-btn").on("click", function(){
     } else {
         let existingPairIndex = $assignedPair.findIndex(pair => pair.email === $selectValue);
         if (existingPairIndex !== -1 && $assignedPair[existingPairIndex].imgLink.includes($currentImg)) {
-            $(".select-error-glow").addClass("email-error-glow");
             if($("body").hasClass("lightmode")) {
                 $(".error-msg-select").css("color", "#ff0000");
                 $(".select-error-glow").addClass("light-error");
             } else {
                 $(".error-msg-select").css("color", "#ff5858");
+                $(".select-error-glow").addClass("email-error-glow");
             }
             $(".error-msg-select").text("Image already exists").show();
             console.log("Image already exists for this email address");
@@ -147,6 +147,8 @@ $("#select-btn").on("click", function(){
             } else {
                 $(".error-msg-select").css("color", "#2fca00");
             }
+            $("#select-email").removeClass("light-error");
+            $("#select-email").removeClass("email-error-glow");
             $(".error-msg-select").text("Image added!").show();
             $($ulName).append(`<li><img src=${$currentImg} alt=${$selectValue}></li>`);
             setTimeout(function(){
