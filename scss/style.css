@@ -192,7 +192,7 @@ ul {
   height: 50px;
   border: solid #555 1px;
   border-radius: 2px;
-  padding: 5px 7px;
+  padding: 5px 10px;
   font-size: 1rem;
 }
 .select-email:focus {
@@ -237,7 +237,7 @@ li {
 }
 
 .focus-glow-light {
-  box-shadow: 0 0 20px #222;
+  box-shadow: 0 0 20px #001;
 }
 
 .img-fetcher-box, .email-input-box, .email-select-box {
