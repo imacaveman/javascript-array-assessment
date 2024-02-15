@@ -94,7 +94,6 @@ $("#email-btn").on("click", function(){
             $(".error-msg-input").css("color", "#ff5858");
         }
         $(".error-msg-input").text("Invalid email address").show();
-        $("#email-input").val("");
         setTimeout(function(){
             $(".error-msg-input").fadeOut(500);
         }, 3000);

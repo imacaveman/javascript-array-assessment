@@ -69,10 +69,13 @@ ul {
     width: 700px;
   }
 }
+.title-text > h3 {
+  text-align: center;
+}
 
 .fetch-button-ref {
   width: 140px;
-  height: 30px;
+  height: 28px;
   background-color: #555;
   border: solid #555 1px;
   border-radius: 2px;
@@ -81,6 +84,9 @@ ul {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 .fetch-button-ref:hover {
   color: #fff;
